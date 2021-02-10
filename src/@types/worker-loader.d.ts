@@ -1,0 +1,1 @@
+declare module 'worker-loader!pdfjs-dist/lib/pdf.worker';
