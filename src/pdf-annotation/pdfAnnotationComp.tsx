@@ -21,7 +21,11 @@ import {
   T_ViewportHighlight,
 } from './types';
 
-setPdfWorker(PDFWorker);
+try {
+  setPdfWorker(PDFWorker);
+} catch(e) {
+  console.log('pdf worker issues')
+}
 interface IPdfHighlighterComponentProps {
   pdfUrl: string;
   setUpdateHighLight: Function;
