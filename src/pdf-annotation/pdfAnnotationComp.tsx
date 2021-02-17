@@ -10,7 +10,7 @@ import {
 import React from 'react';
 import { showError } from 'src/utils/alertnotification';
 /* eslint import/no-webpack-loader-syntax: 0 */
-import PDFWorker from 'worker-loader!pdfjs-dist/lib/pdf.worker';
+import PDFWorker from 'worker-loader?esModule=false!pdfjs-dist/lib/pdf.worker';
 import {
   T_Highlight,
   T_LTWH,
